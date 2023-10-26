@@ -1,0 +1,73 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "username": "jguzman",
+      "password": "clave1",
+      "nombreCompleto": "Jorge Guzman",
+      "email": "j.guzman@profesor.duoc.cl",
+      "asignaturas": ["Deep Learning", "Machine Learning"],
+      "role": "docente",
+      "isactive": true,
+      "sede": "Santiago",
+      "periodoAcademico": "2023A"
+    },
+    {
+      "id": 2,
+      "username": "vpoblete",
+      "password": "clave2",
+      "nombreCompleto": "Viviana Poblete",
+      "email": "v.poblete@profesor.duoc.cl",
+      "asignaturas": ["Programacion Web", "Progrmacion de Aplicaciones Moviles"],
+      "role": "docente",
+      "isactive": true,
+      "sede": "Valparaíso",
+      "periodoAcademico": "2023A"
+    },
+    {
+      "id": 3,
+      "username": "formazabal",
+      "password": "clave3",
+      "nombreCompleto": "Felipe Ormazabal",
+      "email": "f.ormazabal@profesor.duoc.cl",
+      "asignaturas": ["Mineria de Datos", "Big Data"],
+      "role": "docente",
+      "isactive": true,
+      "sede": "Concepción",
+      "periodoAcademico": "2023A"
+    },
+    {
+      "id": 4,
+      "username": "mpina",
+      "password": "clave4",
+      "nombreCompleto": "Mauricio Pïña",
+      "email": "m.pina@duoc.cl",
+      "role": "alumno",
+      "isactive": true,
+      "sede": "Santiago",
+      "periodoAcademico": "2023A"
+    },
+    {
+      "id": 5,
+      "username": "czudohna",
+      "password": "clave5",
+      "nombreCompleto": "Cristian Zudohna",
+      "email": "c.zudohna@duoc.cl",
+      "role": "alumno",
+      "isactive": true,
+      "sede": "Valparaíso",
+      "periodoAcademico": "2023A"
+    },
+    {
+      "id": 6,
+      "username": "vhernandez",
+      "password": "clave6",
+      "nombreCompleto": "Valentino Hernandez",
+      "email": "v.hernandez@duoc.cl",
+      "role": "alumno",
+      "isactive": true,
+      "sede": "Concepción",
+      "periodoAcademico": "2023A"
+    }
+  ]
+}

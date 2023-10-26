@@ -1,0 +1,57 @@
+ion-card-header {
+  text-align: center; 
+}
+
+ion-content {
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+ion-button.boton-ingresar {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 11px; 
+  padding: 5px 9px; 
+  width: auto; 
+}
+
+ion-label.enlace-registro {
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ion-label.restablecer-contrasena {
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px; 
+}
+
+ion-avatar.grande {
+  width: 170px; 
+  height: 170px; 
+}
+
+/* Estilo personalizado para la etiqueta ion-label */
+ion-item .ion-label {
+  font-size: 14px; /* Tamaño de fuente igual al de los campos de entrada */
+}
+
+/* CSS personalizado para igualar el tamaño de los mensajes de error */
+.error-message {
+  font-size: 13px; /* Tamaño de fuente igual al de los campos de entrada */
+  margin-top: 8px; /* Espacio superior para separarlos de los campos de entrada */
+}

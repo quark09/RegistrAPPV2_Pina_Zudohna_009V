@@ -1,0 +1,53 @@
+.encabezado {
+    
+  margin-top: 20px;
+  margin-left: 10px;
+
+  h1 {
+      font-size: 1.6rem;
+      font-family: 'Roboto', sans-serif;
+      font-weight: bolder;
+  }
+
+}
+
+ion-card {
+  width: 100%;
+  margin-bottom: 10px;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+  border-radius: 10px; /* Agrega bordes redondos */
+  overflow: hidden; 
+}
+
+ion-card:hover {
+  transform: translateY(-10px);
+}
+
+ion-content {
+  overflow-y: hidden;
+}
+
+/* Estilo para los títulos de las tarjetas */
+.card-title {
+  font-size: 0.9rem; /* Tamaño de fuente */
+  font-weight: bold; /* Peso de la fuente en negrita */
+  color: #333; /* Color del texto */
+}
+
+/* Estilo para los subtítulos de las tarjetas */
+.card-subtitle {
+  font-size: 0.8rem; /* Tamaño de fuente */
+  color: #666; /* Color del texto más claro */
+}
+
+/* Otras propiedades de estilo que puedes ajustar según tus preferencias */
+.card-header {
+  background-color: #f0f0f0; /* Color de fondo del encabezado de la tarjeta */
+}
+
+.card-content {
+  font-size: 0.8rem; /* Tamaño de fuente del contenido de la tarjeta */
+  color: #444; /* Color del texto del contenido */
+}
+

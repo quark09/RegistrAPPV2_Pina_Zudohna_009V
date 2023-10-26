@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()">
+        <ion-icon slot="icon-only" name="menu-outline" color="success"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Credenciales</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="encabezado">
+    <h1>Bienvenido</h1>
+  </div>
+  <br>
+  <ion-card [routerLink]="'/homedocente'">
+    <img src="assets/Docente.jpg" alt="Docente">
+    <ion-card-header>
+      <ion-card-title>Ingrese como Docente</ion-card-title>
+      <ion-card-subtitle></ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card [routerLink]="'/homealumno'">
+    <img src="assets/Alumno.jpg" alt="Alumno">
+    <ion-card-header>
+      <ion-card-title>Ingrese como Alumno</ion-card-title>
+      <ion-card-subtitle></ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      
+    </ion-card-content>
+  </ion-card>
+</ion-content>
