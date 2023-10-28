@@ -11,6 +11,15 @@ export class AuthService {
   
   constructor(private httpClient: HttpClient) { }
 
+  registrarUsuario(nuevoUsuario: Users): Observable<Users> {
+    return this.httpClient.post<Users>(`${environment.apiUrl}/usuarios`, nuevoUsuario);
+  }
+
+  
+
+  
+
+
   getAllUsers(): Observable<Users[]> {
     return this.httpClient.get<Users[]>(`${environment.apiUrl}/usuarios`);
   }
@@ -29,5 +38,11 @@ export class AuthService {
 
   isExistent() {
     return this.isLoggedIn();
+  }
+
+  logout() {
+    // Limpiar cualquier información de autenticación, por ejemplo, eliminar los elementos de sessionStorage
+    sessionStorage.removeItem('username');
+    sessionStorage.removeItem('userrole');
   }
 }

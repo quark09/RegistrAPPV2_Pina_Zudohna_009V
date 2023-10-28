@@ -19,7 +19,7 @@ ion-button.boton-ingresar {
   width: auto; 
 }
 
-ion-label.enlace-registro {
+ion-label.enlace-crearcuenta {
   margin-left: 10px;
   display: flex;
   justify-content: center;
@@ -45,13 +45,13 @@ ion-avatar.grande {
   height: 170px; 
 }
 
-/* Estilo personalizado para la etiqueta ion-label */
+
 ion-item .ion-label {
-  font-size: 14px; /* Tamaño de fuente igual al de los campos de entrada */
+  font-size: 14px; 
 }
 
-/* CSS personalizado para igualar el tamaño de los mensajes de error */
+
 .error-message {
-  font-size: 13px; /* Tamaño de fuente igual al de los campos de entrada */
-  margin-top: 8px; /* Espacio superior para separarlos de los campos de entrada */
+  font-size: 13px; 
+  margin-top: 8px; 
 }

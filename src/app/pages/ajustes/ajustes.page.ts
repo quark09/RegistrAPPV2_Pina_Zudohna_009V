@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { AlertController } from '@ionic/angular';
 import { MenuController } from '@ionic/angular';
+import { AuthService } from '../../servicios/auth.service';
+
 
 @Component({
   selector: 'app-ajustes',
@@ -12,16 +14,14 @@ export class AjustesPage  {
 
   modoOscuro: boolean = false;
 
-  constructor(private alertController: AlertController, private router: Router, private menuCtrl: MenuController) {}
+  constructor(private alertController: AlertController, private router: Router, private menuCtrl: MenuController,  private authService: AuthService ) {}
 
   mostrarMenu(){
     this.menuCtrl.enable(true, 'first');
     this.menuCtrl.open('first');
   }
   
-  toggleModoOscuro() {
-    document.body.classList.toggle('dark', this.modoOscuro);
-  }
+
 
   cerrarSesion() {
     this.presentAlert();
@@ -39,6 +39,7 @@ export class AjustesPage  {
         {
           text: 'Aceptar',
           handler: () => {
+            this.authService.logout();
             this.router.navigate(['/login']);
           },
         },

@@ -11,7 +11,7 @@
             <img class="ion-padding imagen" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
           </ion-avatar>
         </div>
-        <form [formGroup]="loginForm">
+        <form [formGroup]="loginForm" (keydown.enter)="ingresar($event)">
           <ion-item>
             <ion-label position="floating">Usuario</ion-label>
             <ion-input type="text" formControlName="username"></ion-input>
@@ -42,17 +42,17 @@
               La contraseña debe tener mínimo 6 caracteres
             </ion-label>
             <ion-label class="error-message" position="floating" color="danger" *ngIf="loginForm.get('password')?.hasError('maxlength')">
-              La contraseña debe tener máximo 6 caracteres
+              La contraseña debe tener máximo 15 caracteres
             </ion-label>
           </div>
         </form>
 
         <br>
-        <ion-button type="button" fill="solid" color="success" shape="round" class="boton-ingresar" [disabled]="!loginForm.valid" (click)="ingresar()">
+        <ion-button type="button" fill="solid" color="success" shape="round" class="boton-ingresar" [disabled]="!loginForm.valid" (click)="ingresar($event)">
           Ingresar
         </ion-button>
-        <ion-label routerLink="/registro" color="success" class="enlace-registro">
-          Registrarse
+        <ion-label routerLink="/registro" color="success" class="enlace-crearcuenta">
+          Crear Cuenta
         </ion-label>
         <ion-label color="success" class="restablecer-contrasena">
           Restablecer Contraseña

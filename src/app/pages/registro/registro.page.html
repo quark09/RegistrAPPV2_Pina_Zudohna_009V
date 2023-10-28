@@ -20,7 +20,7 @@
               El nombre debe tener mínimo 5 caracteres
             </ion-label>
             <ion-label class="error-message" position="floating" color="danger" *ngIf="formularioRegistro.get('nombreCompleto')?.hasError('maxlength')">
-              El nombre debe tener máximo 20 caracteres
+              El nombre debe tener máximo 30 caracteres
             </ion-label>
           </div>
 
@@ -140,6 +140,9 @@
           <ion-button routerLink="/" type="submit" fill="solid" color="success" shape="round" class="boton-crearcuenta" [disabled]="!formularioRegistro.valid" (click)="crearCuenta($event)">
             Crear Cuenta
           </ion-button>
+          <ion-label routerLink="/login" color="success" class="enlace-login">
+            Login
+          </ion-label>
         </form>
       </ion-card-content>
     </ion-card>

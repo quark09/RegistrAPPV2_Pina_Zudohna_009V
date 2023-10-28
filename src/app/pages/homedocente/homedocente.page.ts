@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MenuController } from '@ionic/angular';
 import { ToastController } from '@ionic/angular';
 import { Router } from '@angular/router';
+import { AuthService } from '../../servicios/auth.service';
 
 @Component({
   selector: 'app-homedocente',
@@ -11,12 +12,14 @@ import { Router } from '@angular/router';
 export class HomedocentePage implements OnInit {
   inactivityTimer: any;
   usuario: any;
+  asignaturasDocente: string[] = []; 
 
 
   constructor(
     private menuCtrl: MenuController,
     private toastCtrl: ToastController,
-    private router: Router
+    private router: Router,
+    private authService: AuthService
   ) {}
 
   mostrarMenu() {
@@ -52,6 +55,7 @@ export class HomedocentePage implements OnInit {
   }
 
   ngOnInit() {
+    this.usuario = sessionStorage.getItem('username') || '';
     this.inactivityTimer = setTimeout(() => {
       this.mostrarToast('Usuario Inactivo, será redirigido al inicio de sesión');
       this.router.navigateByUrl('/login');

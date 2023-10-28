@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { register } from 'swiper/element/bundle';
+import { AuthService } from './servicios/auth.service';
+import { Router } from '@angular/router';
 register();
 
 interface Componentes {
@@ -14,7 +16,12 @@ interface Componentes {
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  constructor() {}
+
+  getUserRole(): string | null {
+    return sessionStorage.getItem('userrole');
+  }
+
+  constructor(public authService: AuthService, public router: Router) {}
 
   componentes : Componentes[] = [
     {
@@ -22,11 +29,7 @@ export class AppComponent {
       nombre: 'Noticias',
       redirectTo: '/noticias'
     },
-    {
-      icon: 'card-outline',
-      nombre: 'Credenciales',
-      redirectTo: '/roles'
-    },
+
     {
       icon: 'scan-outline',
       nombre: 'Registrar Asistencia',
@@ -42,5 +45,24 @@ export class AppComponent {
       nombre: 'Ajustes',
       redirectTo: '/ajustes'
     },
-  ]
+  ];
+
+
+  get homeLink(): Componentes {
+    const userRole = sessionStorage.getItem('userrole');
+    const homeRoute = userRole === 'docente' ? '/homedocente' : '/homealumno';
+
+    return { icon: 'home-outline', nombre: 'Inicio', redirectTo: homeRoute };
+  }
+
+  ngOnInit() {
+    const isLoggedIn = this.authService.isLoggedIn();
+
+    if (isLoggedIn) {
+      const userRole = sessionStorage.getItem('userrole');
+      const homeRoute = userRole === 'docente' ? '/homedocente' : '/homealumno';
+      this.router.navigate([homeRoute]);
+    }
+  }
+
 }

@@ -6,7 +6,10 @@
       "password": "clave1",
       "nombreCompleto": "Jorge Guzman",
       "email": "j.guzman@profesor.duoc.cl",
-      "asignaturas": ["Deep Learning", "Machine Learning"],
+      "asignaturas": [
+        "Deep Learning",
+        "Machine Learning"
+      ],
       "role": "docente",
       "isactive": true,
       "sede": "Santiago",
@@ -18,7 +21,10 @@
       "password": "clave2",
       "nombreCompleto": "Viviana Poblete",
       "email": "v.poblete@profesor.duoc.cl",
-      "asignaturas": ["Programacion Web", "Progrmacion de Aplicaciones Moviles"],
+      "asignaturas": [
+        "Programacion Web",
+        "Progrmacion de Aplicaciones Moviles"
+      ],
       "role": "docente",
       "isactive": true,
       "sede": "Valparaíso",
@@ -30,7 +36,10 @@
       "password": "clave3",
       "nombreCompleto": "Felipe Ormazabal",
       "email": "f.ormazabal@profesor.duoc.cl",
-      "asignaturas": ["Mineria de Datos", "Big Data"],
+      "asignaturas": [
+        "Mineria de Datos",
+        "Big Data"
+      ],
       "role": "docente",
       "isactive": true,
       "sede": "Concepción",
@@ -68,6 +77,81 @@
       "isactive": true,
       "sede": "Concepción",
       "periodoAcademico": "2023A"
+    },
+    {
+      "id": 7
+    },
+    {
+      "nombreCompleto": "Christian Lazcano",
+      "username": "crlazcano",
+      "email": "crlazcano@profesor.duoc.cl",
+      "role": "docente",
+      "password": "clave9",
+      "sede": "maipu",
+      "asignatura1": "Gestion de Riesgos",
+      "asignatura2": "BPM",
+      "periodoAcademico": "2023A",
+      "id": 8
+    },
+    {
+      "nombreCompleto": "Francisco Valdivieso",
+      "username": "valdiviejo",
+      "email": "fr.valdivieso@profesor.duoc.cl",
+      "role": "docente",
+      "password": "clave10",
+      "sede": "quillota",
+      "asignatura1": "Calidad de Software",
+      "asignatura2": "Laboratorio de Sangre",
+      "periodoAcademico": "2023A",
+      "id": 9
+    },
+    {
+      "nombreCompleto": "Julian Corvalan",
+      "username": "kulian",
+      "email": "julian.baeza@profesor.duoc.cl",
+      "role": "docente",
+      "password": "clve13",
+      "sede": "melipilla",
+      "asignatura1": "Business Intelligence",
+      "asignatura2": "Doctrina Social de la Ignacio",
+      "periodoAcademico": "2023B",
+      "id": 10
+    },
+    {
+      "nombreCompleto": "Rodolfo Manzur",
+      "username": "rmanzur",
+      "email": "rmanzur@duocuc.cl",
+      "role": "alumno",
+      "password": "pico12344",
+      "sede": "Maipù",
+      "asignatura1": "Deep Learning",
+      "asignatura2": "Religión",
+      "periodoAcademico": "2023_2",
+      "id": 11
+    },
+    {
+      "nombreCompleto": "Kevin Gaete",
+      "username": "kgaete",
+      "email": "kgaete@aiep.cl",
+      "role": "docente",
+      "password": "hola12345",
+      "sede": "Alameda",
+      "asignatura1": "Ingenieria de Software",
+      "asignatura2": "Habilidades de la comunicación escrita",
+      "periodoAcademico": "2023_1",
+      "id": 12
+    },
+    {
+      "nombreCompleto": "Francisco Valdivieso",
+      "username": "fvaldivia",
+      "email": "fvaldivia@duocuc.cl",
+      "role": "docente",
+      "password": "docente1234",
+      "sede": "Peñalolen",
+      "asignatura1": "Artes Marciales",
+      "asignatura2": "Habilidades escritas ",
+      "periodoAcademico": "2023_2",
+      "id": 13
     }
   ]
 }

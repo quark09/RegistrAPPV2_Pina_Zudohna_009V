@@ -49,6 +49,7 @@ export class HomealumnoPage implements OnInit {
   }
 
   ngOnInit() {
+    this.usuario = sessionStorage.getItem('username') || '';
     this.inactivityTimer = setTimeout(() => {
       this.mostrarToast('Usuario Inactivo, será redirigido al inicio de sesión');
       this.router.navigateByUrl('/login');

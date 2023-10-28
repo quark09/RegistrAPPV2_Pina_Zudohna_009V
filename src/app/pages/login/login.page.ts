@@ -93,11 +93,13 @@ constructor(
 ) {
   this.loginForm = this.fb.group({
     username: ['', [Validators.required, Validators.minLength(5), Validators.maxLength(10)]],
-    password: ['', [Validators.required, Validators.minLength(6), Validators.maxLength(6)]]
+    password: ['', [Validators.required, Validators.minLength(6), Validators.maxLength(15)]]
   });
 }
 
-async ingresar() {
+async ingresar(event: Event) {
+  event.preventDefault();
+  
   if (this.loginForm.valid) {
     const nombreUsuario = this.loginForm.get('username')?.value;
     const contraseña = this.loginForm.get('password')?.value;
@@ -131,17 +133,22 @@ redirigirSegunRol() {
   } else if (role === 'alumno') {
     this.router.navigate(['/homealumno']);
   }
+
+
+  this.mostrarToast('Has iniciado sesión exitosamente');
 }
 
 ngOnInit() {
 
 }
 
+
+
 async mostrarToast(message: string) {
   const nombreUsuario = sessionStorage.getItem('username') || '';
 
   const toast = await this.toastCtrl.create({
-    message: `¡Hola! ${nombreUsuario} ${message}`,
+    message: `Hola, ${nombreUsuario} ${message}`, // Modificado aquí
     duration: 2000,
     color: 'success',
     position: 'top',
@@ -152,6 +159,7 @@ async mostrarToast(message: string) {
       },
     ],
   });
+
   toast.present();
 }
 }
