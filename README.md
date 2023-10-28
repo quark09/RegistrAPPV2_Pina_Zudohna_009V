@@ -1,6 +1,6 @@
 # RegistrAPPV2_Pina_Zudohna_009V
 
-#Dependencias
+# Dependencias
 
 - npm install swiper
 - npm install @capacitor/toast
