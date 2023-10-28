@@ -118,18 +118,6 @@
       "id": 10
     },
     {
-      "nombreCompleto": "Rodolfo Manzur",
-      "username": "rmanzur",
-      "email": "rmanzur@duocuc.cl",
-      "role": "alumno",
-      "password": "pico12344",
-      "sede": "Maipù",
-      "asignatura1": "Deep Learning",
-      "asignatura2": "Religión",
-      "periodoAcademico": "2023_2",
-      "id": 11
-    },
-    {
       "nombreCompleto": "Kevin Gaete",
       "username": "kgaete",
       "email": "kgaete@aiep.cl",
@@ -152,6 +140,42 @@
       "asignatura2": "Habilidades escritas ",
       "periodoAcademico": "2023_2",
       "id": 13
+    },
+    {
+      "nombreCompleto": "Nilo Lazo",
+      "username": "nlazo",
+      "email": "nlazo@duocuc.cl",
+      "role": "alumno",
+      "password": "alumno123",
+      "sede": "Alameda",
+      "asignatura1": "Deep Learning",
+      "asignatura2": "Doctrina social de la iglesia",
+      "periodoAcademico": "2023_2",
+      "id": 14
+    },
+    {
+      "nombreCompleto": "Fernanda Gaete",
+      "username": "fgaete",
+      "email": "fgaete@duocuc.cl",
+      "role": "alumna",
+      "password": "alumna12345",
+      "sede": "Quillota",
+      "asignatura1": "Java",
+      "asignatura2": "Web",
+      "periodoAcademico": "2024_1",
+      "id": 15
+    },
+    {
+      "nombreCompleto": "Joaquin Catalan",
+      "username": "jcatalan",
+      "email": "jcatalan@duocuc.cl",
+      "role": "alumno",
+      "password": "alumno1234",
+      "sede": "Melipilla",
+      "asignatura1": "Programación de Aplicaciones Móviles",
+      "asignatura2": "Capstone",
+      "periodoAcademico": "2025_1",
+      "id": 16
     }
   ]
 }
